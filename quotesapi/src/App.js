@@ -12,7 +12,7 @@ function App() {
         setTodos(data);
 
       })
-      .catch(error => console.error('Error fetching todos:', error));
+      .catch(error => console.error('Error fetching todos -:- ', error));
   }, []);
   let trueTodos = todos.filter(todo => todo.completed === true)
 
